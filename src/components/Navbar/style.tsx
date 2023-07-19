@@ -3,8 +3,8 @@ import { Flex, Container } from "../../styles/Global";
 import { Button } from "../../styles/Buttons";
 
 export const Navbar = styled("nav", {
-  background: "$mode",
-  borderBottom: "2px solid $grey4",
+  background: "$yelow1",
+  borderBottom: "2px solid $black1",
   position: "fixed",
   inset: 0,
   bottom: "auto",
@@ -23,6 +23,8 @@ export const Navbar = styled("nav", {
 
 export const LogoTipo = styled(Flex, {
   alignItems: "center",
+  gap: "1rem",
+
 });
 
 export const LogoTipoImage = styled("img", {
@@ -46,6 +48,7 @@ export const LogoTipoText = styled("span", {
 });
 
 export const NavbarLinks = styled(Flex, {
+  gap: "1rem",
   "@mobile": {
     flexWrap: "wrap",
     justifyContent: "space-between",
@@ -55,7 +58,7 @@ export const NavbarLinks = styled(Flex, {
       order: "3",
     },
     [`& ${Button}`]: {
-      width: "48%",
+      width: "100%",
       order: "1",
     },
   },

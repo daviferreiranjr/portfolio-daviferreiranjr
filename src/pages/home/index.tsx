@@ -32,18 +32,18 @@ export const Home = (): JSX.Element => {
         <Container>
           <HeaderContent>
             <Text as="h1" type="heading1" color="grey5">
-              Criando experiências por meio da tecnologia{" "}
+              Desenvolvedor Fullstack{" "}
             </Text>
             <Text type="body1" color="grey6">
-              Sou estudante de programação na Kenzie Academy Brasil, participei
-              de diversos projetos resolvendo problemas de alto nível e
-              desenvolvendo habilidades
+            Sou um Desenvolvedor Full Stack em formação pela Kenzie Academy Brasil.
+            Já produzi diversos projetos Front End e Back End, nos quais pude desenvolver minhas habilidades em HTML5, CSS3, JavaScript(ES6), Controle de versão com Git, TypeScript, Node, Express, Python e Django. 
+            Além disso, possuo conhecimentos em ferramentas e metodologias como Trello, Figma e Scrum. 
             </Text>
             <HeaderButtonsArea>
-              <Button as="a" href="#projetos">
+              <Button as="a" href="#projetos" type="primary">
                 Projetos
               </Button>
-              <Button as="a" href="#tecnologias" type="btLink" color="grey5">
+              <Button as="a" href="#tecnologias" type="primary">
                 Tecnologias
               </Button>
             </HeaderButtonsArea>
@@ -52,8 +52,8 @@ export const Home = (): JSX.Element => {
       </Header>
       <StackSection id="tecnologias">
         <Container>
-          <Text as="h4" type="heading3" color="grey1">
-            Ferramentas que domino
+          <Text as="h4" type="heading3" color="grey5">
+            Tecnologias:
           </Text>
           <StackCards>
             {stackData.map((stack, index) => (
@@ -66,10 +66,10 @@ export const Home = (): JSX.Element => {
         <Container>
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
-              <Text as="h2" type="heading4" color="grey1">
-                Vamos trocar uma ideia?
+              <Text as="h2" type="heading4" color="grey5">
+                Vamos conversar?
               </Text>
-              <Text as="p" type="body1" color="grey2">
+              <Text as="p" type="body1" color="grey5">
                 No linkedIn sempre estou compartilhando meus processos diários
                 para desenvolver esses projetos e estou disposto a trocar
                 algumas ideias por lá
@@ -84,15 +84,11 @@ export const Home = (): JSX.Element => {
               </Button>
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContent>
-              <Text type="body1" color="grey2" css={{ marginBottom: "$2" }}>
-                Projetos
+              <Text type="heading2" as="h3" color="black1" css={{ marginBottom: "$2" }}>
+                Projetos:
               </Text>
-              <Text as="h3" type="heading2" color="grey1">
-                Originalidade e{" "}
-                <Text as="span" color="brand1" type="heading2">
-                  dedicação
-                </Text>{" "}
-                em cada detalhe
+                <Text as="p" type="body1" color="black1">
+                Abaixo estão alguns projetos desenvolvidos por mim:
               </Text>
               <Project />
             </ProjectsAreaContent>

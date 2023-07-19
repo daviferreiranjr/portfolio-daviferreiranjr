@@ -12,6 +12,7 @@ import {
 } from "./style";
 
 import { FaGithub, FaLinkedinIn, FaBars } from "react-icons/fa";
+import { BsWhatsapp } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 import { Button } from "@/styles/Buttons";
 import { Container } from "@/styles/Global";
@@ -24,7 +25,7 @@ export interface MenuButtonOpen {
 export const NavBar = (): JSX.Element => {
   const isWide = useMedia({ maxWidth: "991px" });
 
-  document.title = userData.nameUser;
+  document.title = "Portifólio Davi Ferreira";
 
   const [open, setOpen] = useState(false);
 
@@ -67,12 +68,12 @@ export const NavLinks = (): JSX.Element => {
     <NavbarLinks>
       {userData.whatsappNumber && (
         <Button
-          type="primary"
+          type="icon"
           as="a"
           target="_blank"
           href={`https://api.whatsapp.com/send?phone=+55${userData.whatsappNumber}&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`}
         >
-          Falar no whatsapp
+          <BsWhatsapp/>
         </Button>
       )}
 

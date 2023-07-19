@@ -12,7 +12,7 @@ export const StackCard = styled("div", {
   maxWidth: "10.25rem",
   borderRadius: "$1",
   padding: "1rem",
-  background: "$whiteFixed",
+  background: "$yelow1",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",

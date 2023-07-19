@@ -8,11 +8,13 @@ export const Project = styled("article", {
 
 export const ProjectStack = styled(Flex, {
   margin: "1.25rem 0 1.25rem 0",
+  display: "flex",
+  gap: "1rem",
 });
 
 export const ProjectStackTech = styled("span", {
-  backgroundColor: "$brand4",
-  color: "$brand2",
+  backgroundColor: "$black1",
+  color: "$black1",
   padding: "0  0.5rem",
   borderRadius: "$2",
 });
@@ -23,7 +25,7 @@ export const ProjectLinks = styled(Flex, {
 
 export const ProjectLink = styled("a", {
   fontSize: "1rem",
-  color: "$grey2",
+  color: "$black1",
   fontWeight: "500",
   marginRight: "$2",
   display: "flex",

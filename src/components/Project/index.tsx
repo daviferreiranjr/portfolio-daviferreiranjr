@@ -50,7 +50,7 @@ export const Project = (): JSX.Element => {
             as="h2"
             type="heading3"
             css={{ marginBottom: "$3" }}
-            color="grey1"
+            color="black1"
           >
             {repository.name}
           </Text>
@@ -59,14 +59,14 @@ export const Project = (): JSX.Element => {
             <ProjectStack>
               <Text type="body2">Linguagem:</Text>
               <ProjectStackTech>
-                <Text color="brand1" type="body2">
+                <Text color="grey5" type="body2">
                   {repository.language}
                 </Text>
               </ProjectStackTech>
             </ProjectStack>
           )}
 
-          <Text type="body1" color="grey2">
+          <Text type="body1" color="black1">
             {repository.description}
           </Text>
           <ProjectLinks>
@@ -75,7 +75,7 @@ export const Project = (): JSX.Element => {
             </ProjectLink>
             {repository.homepage && (
               <ProjectLink target="_blank" href={repository.homepage}>
-                <FaShare /> Aplicação
+                <FaShare /> Link do Projeto
               </ProjectLink>
             )}
           </ProjectLinks>

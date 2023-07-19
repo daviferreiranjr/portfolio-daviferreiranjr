@@ -13,7 +13,7 @@ export const Container = styled("div", {
 
 export const Flex = styled("div", {
   display: "flex",
-  gap: "$1",
+  gap: "5rem",
 });
 
 export const colors = {
@@ -44,6 +44,12 @@ export const colors = {
     grey6: {
       color: "$grey6",
     },
+    black1: {
+      color: "black1",
+    },
+    yelow1: {
+      color: "yelow1",
+    },
   },
 };
 
@@ -73,8 +79,10 @@ export const GlobalStyle: React.FC<GlobalStyleProps> = ({ children }) => {
       grey4: "#F1F3F5",
       grey5: "#F8F9FA",
       grey6: "#DEE0FB",
+      black1: "#000000",
       whiteFixed: "#ffffff",
       mode: "#ffffff",
+      yelow1: "#f3c439"
     },
     sizes: {
       container: "75rem",

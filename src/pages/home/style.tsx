@@ -5,7 +5,7 @@ import { Button } from "@/styles/Buttons";
 import img from "@/public/static/img/background/dots.svg";
 
 export const Header = styled("header", {
-  backgroundColor: "$brand1",
+  backgroundColor: "$black1",
   padding: "12rem 0 8rem 0",
   backgroundImage: `url(${img})`,
   backgroundRepeat: "no-repeat",
@@ -25,8 +25,10 @@ export const HeaderContent = styled("div", {
 
 export const HeaderButtonsArea = styled(Flex, {
   marginTop: "$2",
+  gap: "2rem",
   "@mobile": {
     flexDirection: "column",
+    gap: "1rem",
     [`& ${Button}`]: {
       width: "100%",
     },
@@ -34,7 +36,7 @@ export const HeaderButtonsArea = styled(Flex, {
 });
 
 export const StackSection = styled("section", {
-  backgroundColor: "$grey4",
+  backgroundColor: "$black1",
   padding: "4rem 0 2rem 0",
 });
 
@@ -54,6 +56,7 @@ export const StackCards = styled("div", {
 
 export const ProjectsArea = styled("section", {
   padding: "4rem 0 8rem 0",
+  backgroundColor: "$black1",
 });
 
 export const ProjectsAreaSocialMediaMessage = styled("aside", {
@@ -75,10 +78,15 @@ export const ProjectsAreaSocialMediaMessage = styled("aside", {
 export const ProjectsAreaContent = styled("div", {
   width: "60%",
   paddingLeft: "4rem",
+  backgroundColor: "$yelow1",
+  padding: "3rem",
+  borderRadius: "$1",
+  
   "@mobile": {
     width: "100%",
     paddingLeft: "0",
-  },
+    padding: "2rem 1rem",
+    },
 });
 
 export const ProjectAreaWrapperColumns = styled(Flex, {
@@ -86,5 +94,7 @@ export const ProjectAreaWrapperColumns = styled(Flex, {
   alignItems: "flex-start",
   "@mobile": {
     flexDirection: "column",
+    padding: "1rem",
+    gap: "0.5rem",
   },
 });
