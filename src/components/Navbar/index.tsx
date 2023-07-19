@@ -25,7 +25,7 @@ export interface MenuButtonOpen {
 export const NavBar = (): JSX.Element => {
   const isWide = useMedia({ maxWidth: "991px" });
 
-  document.title = "Portifólio Davi Ferreira";
+  document.title = "Portfólio Davi Ferreira";
 
   const [open, setOpen] = useState(false);
 
